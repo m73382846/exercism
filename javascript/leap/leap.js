@@ -5,10 +5,10 @@
 
 export const isLeap = (year) => {
   let result;  
-  if (Number.isInteger(year/4)) {
-    if (Number.isInteger(year/100)) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
       
-      if (Number.isInteger(year/400)) {
+      if (year % 400 === 0) {
         result = true;
       } else {
         result = false;
