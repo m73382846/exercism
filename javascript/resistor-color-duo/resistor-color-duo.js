@@ -3,6 +3,14 @@
 // convenience to get you started writing code faster.
 //
 
-export const decodedValue = () => {
-  throw new Error("Remove this statement and implement this function");
+export const COLORS = ["black","brown","red","orange","yellow","green","blue","violet","grey","white"]
+
+
+export const decodedValue = (resistorValues) => {
+  const firstColor = COLORS.indexOf(resistorValues[0]).toString();
+  const secondColor = COLORS.indexOf(resistorValues[1]).toString();
+
+  return  parseInt(firstColor + secondColor); 
+
+
 };
