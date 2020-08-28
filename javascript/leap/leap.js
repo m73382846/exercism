@@ -3,21 +3,19 @@
 // convenience to get you started writing code faster.
 //
 
-export const isLeap = (year) => {
-  let result;  
+export const isLeap = (year) => {  
   if (year % 4 === 0) {
     if (year % 100 === 0) {
       
       if (year % 400 === 0) {
-        result = true;
+        return true;
       } else {
-        result = false;
+        return false;
       }
     } else {
-      result = true;
+      return true;
     }
   } else {
-    result = false;
+    return false;
   };
-  return result; 
 };
